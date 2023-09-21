@@ -1,90 +1,126 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfi', sans-serif;
+}
+
+html{
+    height: 100vh;
+    font-size: 14px;
 }
 body{
-   background-color: #ce869e;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-image: url(https://img.freepik.com/vetores-gratis/fundo-hexagonal-escuro-com-cor-gradiente_79603-1409.jpg);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+   
+
 }
 .container{
-    width: 800px;
-    max-width: 800px;
-   
-    height: auto;
+    height: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 20px;
-    margin: 30px 10px 20px 10px;
+    color: rgb(6, 3, 3);
+
 }
-.img-box{
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+header img{
+    max-width: 140px;
+    scroll-margin-bottom: 30px;
+    border-radius: 210px;
+    margin: 5px;
+   
+   
+}
+
+
+header h2{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
+    font-size: 33px;
+    color:whitesmoke;
+    text-align: center;
+    text-shadow: 2px 2px 2px 2px black;
+}
+header p{
+   font-size:13px ;
+   color:whitesmoke;
+   text-align: center;
+  
+   
+
+}
+h3{
+    color:whitesmoke;
+}
+
+section.botoes-links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+   
+}
+a.link button{
+    width: 100%;
+    padding: 10px 20px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-bottom: 50px;
-}
-.img-profile{
-    width: 230px;
-    height: 220px;
-    border-radius: 50%;
-    border-color: #353434;
-}
-.my-name{
-    font-family: 'roboto',sans-serif;
-    font-weight: 300;
+    justify-content: space-between;
+    border: none;
+    border-radius: 15px;
+    font-size: 1.2em;
+    cursor:pointer;
     color:whitesmoke;
-    margin-top: 5px;
-    text-shadow: 5px 5px 5px #b85073; 
-}
-.img-box h2{
-    font-family: 'roboto',sans-serif;
-    font-weight: 100;
-    font-size: 20px;
-    color:whitesmoke;
-    text-align: center;
-    text-shadow: 5px 5px 5px #b85073;
+    transition: .3s;
    
+}
 
+a.link i{
+    font-size: 1.5em;
+
+}
+a.link button:hover, footer a.btn-footer{
+    transform:scale(1.05)
+}
+h4{
+    color: whitesmoke;
+}
+
+a{
+    text-decoration: none;
+    color:black;
    
-
-}
-.link-box{
-    width: 100%;
-    max-width: 790px;
-    height: 70px;
-    border-radius: 10px;
-    background-color:#fae9ee;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    margin-bottom: 20px;
-    cursor: pointer;
-    box-shadow: 3px 3px 3px 3px #b85073; 
-
-}
-.link-box a{
-    width: 100%;
-     height: 100%;
-     font-size: 16px;
-     font-family: 'roboto',sans-serif;
-     font-weight: 700;
-     color:#353434;
-     text-decoration: none;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-
-}
-.link-box:hover{
-    background-color:#b65d7a;
   
 }
+.botao{
+   background-color: transparent;
+    box-shadow: 2px 1px  2px 2px whitesmoke;
+}
 footer{
-    width: 100%;
-    height: 30px;
-    color:whitesmoke;
     text-align: center;
-    margin-top: 50px;
-    text-shadow: 6px 6px 6px #b85073; 
+    margin: 30px;
+}
+footer a.btn-footer{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    font-size: 2em;
+    line-height: 43px;
+    border-radius: 60%;
+    margin: 0 10px;
+    transition: .2s;
+    background: whitesmoke;
+
     
+
 }
